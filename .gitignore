@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+# Build outputs
+build*/
+out/
+Program_arm64/
+/Program
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# IDE
+.vs/
+.vscode/
+.idea/
+CMakeSettings.json
+*.user
+*.suo
+*.sdf
+*.ncb
+
+# Crash dumps
+application/RCa*
+
+# Compiled objects
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.o
 *.a
 *.lib
+!application/*.lib
 
-# Executables
+# Binaries
 *.exe
-*.out
-*.app
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Archives
+*.zip

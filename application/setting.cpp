@@ -18,7 +18,7 @@ PyObject* getpatchversion(PyObject* self, PyObject* args) {
     return PyTextFromGbk(Params::PatchVersion);
 }
 PyObject* getplayername(PyObject* self, PyObject* args) {
-    return PyTextFromGbk(Params::DisplayName);
+    return PyTextFromUtf8(Params::DisplayName.c_str());
 }
 
 static PyMethodDef EngineMethods[] = {
